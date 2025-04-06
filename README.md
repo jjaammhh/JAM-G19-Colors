@@ -1,7 +1,7 @@
 # JAM G19 Colors
 This application is an utility for changing Logitech G19 backlit colors under Windows 10/11.
 
-Logitech abandoned support for the glorious G19 keyboard, and this project aims to provide a solution for users of modern Windows versions who want to customize their keyboard's backlight colors, without the need for installing nor Logitech's software nor any other third-party software. Yes, no Logitech Gaming Software (LGS) or G Hub is required.
+Logitech dropped support for the glorious G19 keyboard, and this project aims to provide a solution for users of modern versions of Windows who want to customize the backlight colors of their keyboard, without the need to install either Logitech software or any other third-party software. Yes, neither Logitech Gaming Software (LGS) nor G Hub is required.
 
 As long as this is a 100% pure Python project, you can choose to run it using a Python interpreter, compile it to an executable (using PyInstaller or similar), or even run the provided executable directly.
 
