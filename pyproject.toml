@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "jam_g19_colors"
+version = "0.1.0"
+description = "Un script para establecer el color de retroiluminación de un teclado Logitech G19 usando pywinusb."
+authors = ["Tu Nombre <tu@email.com>"] # ¡Reemplaza esto con tu información!
+license = "MIT" # Puedes elegir otra licencia si lo prefieres
+#readme = "README.md" # Opcional: si planeas tener un archivo README
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.14" # Requiere Python 3.8 o superior por f-strings y prácticas modernas. pywinusb debería ser compatible.
+pywinusb = {version = "^0.4.2", platform = "win32"}
+
+[tool.poetry.group.dev.dependencies]
+# Dependencias opcionales para desarrollo (linters, formatters, etc.)
+pyinstaller = "^6.12.0"
+
+[tool.poetry.scripts]
+# Esto te permite ejecutar el script directamente desde la línea de comandos
+# después de instalarlo con Poetry (ejecutando 'g19-color-setter --r 255 ...')
+# Asegúrate de que el nombre del archivo .py coincida (izquierda del ':')
+# y que la función principal se llame 'main' (derecha del ':').
+jam_g19_colors = "jam_g19_colors:main" # Asume que guardaste el script como g19_color_setter.py
+build-exe = "scripts.build:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
